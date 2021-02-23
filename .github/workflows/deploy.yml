@@ -1,0 +1,60 @@
+name: GitHub Pages Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Installing Yarn
+        run: npm install -g yarn
+      
+      - name: Cache Node Modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/cache
+            !~/cache/exclude
+            **/node_modules
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Installing dependencies
+        run: yarn
+      
+      - name: Building Pages
+        run: yarn build
+
+      - name: Add Commit Hashes
+        run: git rev-parse HEAD > ./src/.vuepress/COMMIT
+        
+      - name: Publish into GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2.2.0
+        with:
+          # Git branch where assets will be deployed
+          target_branch: "gh-pages"
+          # Create incremental commit instead of doing push force
+          keep_history: true
+          # Build directory to deploy
+          build_dir: "./src/.vuepress/dist"
+          # The committer name and email address
+          committer: "Stella IT Bot <bot@stella-it.com>"
+          # The author name and email address
+          author: "${{ github.event.head_commit.author.name }} <${{ github.event.head_commit.author.email }}>"
+          # Commit message
+          commit_message: "${{ github.event.head_commit.message }}"
+          # Write the given domain name to the CNAME file
+          fqdn: "docs.stella-api.dev"
+          # Allow Jekyll to build your site
+          jekyll: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

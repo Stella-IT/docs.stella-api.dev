@@ -1,0 +1,23 @@
+{
+  "name": "docs.stella-api.dev",
+  "version": "0.0.1",
+  "description": "Docs of Stella API, API of Stella IT for Developers, by Developers.",
+  "main": "index.js",
+  "authors": {
+    "name": "Stella IT Developers",
+    "email": "developers@stella-it.com"
+  },
+  "repository": "https://github.com/Stella-IT/docs.stella-api.dev/docs.stella-api.dev",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "vuepress-auto-sidebar": "^1.1.1",
+    "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
+  }
+}
