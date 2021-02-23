@@ -6,7 +6,7 @@ With Stella API, You can control your VM and access various information provided
 
 ## Creating Account
 In order to use Stella API, you need to create Stella IT Accounts.  
-Stella IT uses oAuth2 based authnetication on API authnetication. powered by [Meiling Engine](https://github.com/Stella-IT/meiling).  
+Stella IT uses oAuth2 based authentication on API. powered by [Meiling Engine](https://github.com/Stella-IT/meiling).  
   
 In order to create one, Please head to [Stella IT Accounts](https://login.appie.stella-it.com).  
 
