@@ -49,7 +49,7 @@ module.exports = {
   themeConfig: {
     repo: 'https://github.com/Stella-IT/docs.stella-api.dev',
     editLinks: true,
-    docsDir: '',
+    docsDir: 'src',
     editLinkText: 'Edit this Page on GitHub',
     lastUpdated: true,
     //sidebar: true,
