@@ -13,5 +13,5 @@ Stella IT는 API 인증에 [Meiling Engine](https://github.com/Stella-IT/meiling
 ## 애플리케이션 등록
 자신이 개발한 프로그램에서 API를 이용하려면, oAuth2 애플리케이션을 Stella IT Accounts에 등록해야 합니다.  
 
-{추후 추가 됨} 으로 이동해 애플리케이션을 등록해 주세요.  
+[Stella IT Accounts MyApps 페이지](https://login.appie.stella-it.com/myApps) 으로 이동해 애플리케이션을 등록해 주세요.  
 

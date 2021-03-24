@@ -12,7 +12,7 @@ In order to create one, Please head to [Stella IT Accounts](https://login.appie.
 
 ## Registering Applications
 In order to use API on your application, you need to create an oAuth2 Application on Stella IT Accounts.  
-Please head to {TO BE DECLARED} to create an application.  
+Please head to [Stella IT Accounts MyApps Page](https://login.appie.stella-it.com/myApps) to create an application.  
 
 
 
