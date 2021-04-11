@@ -12,7 +12,8 @@ In order to create one, Please head to [Stella IT Accounts](https://accounts.ste
 
 ## Registering Applications
 In order to use API on your application, you need to create an oAuth2 Application on Stella IT Accounts.  
-Please head to [Stella IT Accounts MyApps Page](https://accounts.stella-it.com/myApps) to create an application.  
-
-
+~~Please head to [Stella IT Accounts MyApps Page](https://accounts.stella-it.com/myApps) to create an application.~~.  
+  
+Currently automatic generation of application is not supported.  
+Please contact us at: [developers@stella-it.com](mailto:developers@stella-it.com) to create API Client ID.  
 
