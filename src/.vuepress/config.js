@@ -52,7 +52,9 @@ module.exports = {
     docsDir: 'src',
     editLinkText: 'Edit this Page on GitHub',
     lastUpdated: true,
-    //sidebar: true,
+    sidebar: [
+      '/getting-started/',
+    ],
     sidebarDepth: 2,
 
     locales: {
