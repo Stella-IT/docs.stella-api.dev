@@ -67,6 +67,9 @@ module.exports = {
         selectText: '언어',
         label: '한국어',
         editLinkText: 'GitHub에서 이 문서 수정하기',
+        sidebar: [
+          '/locales/ko/getting-started/',
+        ],
       }
 
     }
