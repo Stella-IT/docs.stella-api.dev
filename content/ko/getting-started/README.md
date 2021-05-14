@@ -1,7 +1,9 @@
-# 빠른시작 가이드
-
-## Stella API에 오신 것을 환영합니다.
-
+---
+title: 개발을 시작해 볼까요?
+description: Stella API를 통해 개발하는 방법을 배워봅니다.
+position: 2
+category: 빠른시작 가이드
+---
 Stella API는 Stella IT의 서비스를 개발자분들께서 직접 프로그래밍을 통해 조작할 수 있도록 제작된 시스템입니다.  
 
 ## 계정 생성

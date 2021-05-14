@@ -33,9 +33,12 @@ jobs:
       
       - name: Building Pages
         run: yarn build
+      
+      - name: Generating Pages
+        run: yarn generate
 
       - name: Add Commit Hashes
-        run: git rev-parse HEAD > ./src/.vuepress/COMMIT
+        run: git rev-parse HEAD > ./dist/COMMIT
         
       - name: Publish into GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.2.0
@@ -45,7 +48,7 @@ jobs:
           # Create incremental commit instead of doing push force
           keep_history: true
           # Build directory to deploy
-          build_dir: "./src/.vuepress/dist"
+          build_dir: "./dist"
           # The committer name and email address
           committer: "Stella IT Bot <bot@stella-it.com>"
           # The author name and email address

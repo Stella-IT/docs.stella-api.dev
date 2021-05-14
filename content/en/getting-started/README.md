@@ -1,6 +1,9 @@
-# Getting started
-
-## Welcome to Stella API!
+---
+title: Let's get started.
+description: Learn how to use Stella API.
+position: 2
+category: 'Getting started'
+---
 Stella API is a API for Developers to develop applications utilizing Stella IT's service/platforms.  
 With Stella API, You can control your VM and access various information provided by Stella IT and its services.
 

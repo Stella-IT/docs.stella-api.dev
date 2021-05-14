@@ -7,17 +7,16 @@
     "name": "Stella IT Developers",
     "email": "developers@stella-it.com"
   },
-  "repository": "https://github.com/Stella-IT/docs.stella-api.dev/docs.stella-api.dev",
+  "repository": "https://github.com/Stella-IT/docs.stella-api.dev",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "license": "MIT",
-  "devDependencies": {
-    "vuepress": "^1.5.3"
-  },
   "dependencies": {
-    "vuepress-auto-sidebar": "^1.1.1",
-    "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
+    "@nuxt/content-theme-docs": "^0.9.0",
+    "nuxt": "^2.15.2"
   }
 }

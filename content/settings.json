@@ -1,0 +1,10 @@
+{
+  "title": "Stella IT API Docs",
+  "url": "https://docs.stella-api.dev",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": "Stella-IT/docs.stella-api.dev",
+  "twitter": ""
+}
